@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style type="text/css">
+		.bg{
+			background-color: black;
+			
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="container ">
+		<h1 class="task">Морской бой!</h1>
+		<h1>Найди все корабли противника</h1>
+		<h1>Осталось клеток: <span class="left">20</span></h1>
+		<div class="row">
+			<div class="col-1 px-5 py-3  bg-warning text-center border"></div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>1</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>2</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>3</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>4</h4>
+			</div>
+			<div class="col-1 px-5  py-3 bg-warning text-center border">
+				<h4>5</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>6</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>7</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>8</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>9</h4>
+			</div>
+			<div class="col-1 px-5 py-3  bg-warning text-center border">
+				<h4>10</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1 px-5 py-4 bg-warning text-center border">
+			 	<h4>A</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border wrong">
+			
+			</div>
+			<div class="col-1  px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1  px-5 py-4 bg-warning text-center border">
+				<h4>B</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border wrong">
+
+			</div>
+			<div class="col-1  px-5 py-4 bg border wrong">
+			
+			</div>
+			<div class="col-1  px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1 px-5 py-4  bg-warning text-center border">
+				<h4>C</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4  bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong ">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>	
+		</div>
+		<div class="row">
+			<div class="col-1 px-5 py-4  bg-warning text-center border">
+				<h4>D</h4>
+			</div>
+			<div class="col-1  px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border help_fall">
+				<p style="display: none; margin-left: -40px;" class="help_fall_p text-white">Подсказка!</p>
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1 px-5 py-4  bg-warning text-center border">
+				<h4>E</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1 px-5 py-4 bg-warning text-center border">
+				<h4>F</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1 px-5 py-4 bg-warning text-center border">
+				<h4>G</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1 px-5 py-4 bg-warning text-center border">
+				<h4>H</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1 px-5 py-4 bg-warning text-center border">
+				<h4>I</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1 px-5 py-4 bg-warning text-center border">
+				<h4>J</h4>
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border ship">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1 px-5 py-4 bg border wrong">
+				
+			</div>
+			<div class="col-1  px-5 py-4 bg border wrong">
+				
+			</div>
+		</div>
+	</div>
+<script type="text/javascript">
+let left = 20;
+
+ships = document.querySelectorAll(".ship");
+falls = document.querySelectorAll(".wrong");
+
+for(let i = 0; i<20; i = i + 1){
+	ships[i].onclick = function(){
+		//memes[i].style.backgroundImage = "url(mem.jpg)";
+		//memes[i].style.backgroundSize = "100% 100%";
+		ships[i].style.backgroundColor = "red";
+		left = left - 1;
+		document.querySelector(".left").innerHTML = left;
+	}
+}
+for(let i = 0; i<79; i = i + 1){
+    falls[i].onclick = function(){
+		//memes[i].style.backgroundImage = "url(mem.jpg)";
+		//memes[i].style.backgroundSize = "100% 100%";
+		falls[i].style.backgroundColor = "green";
+	}
+}
+document.querySelector(".help_fall").onclick = function(){
+		falls[20].style.backgroundColor = "green";
+		falls[67].style.backgroundColor = "green";
+		falls[41].style.backgroundColor = "green";
+		falls[59].style.backgroundColor = "green";
+		falls[53].style.backgroundColor = "green";
+		document.querySelector(".help_fall_p").style.display = "block";
+		for(let i = 0; i<20; i = i + 1){
+			//memes[i].style.backgroundImage = "url(mem.jpg)";
+			//memes[i].style.backgroundSize = "100% 100%";
+			ships[i].style.backgroundColor = "red";
+			left = left - 1;
+			document.querySelector(".left").innerHTML = left;
+		}
+		for(let i = 0; i<79; i = i + 1){
+			//memes[i].style.backgroundImage = "url(mem.jpg)";
+			//memes[i].style.backgroundSize = "100% 100%";
+			falls[i].style.backgroundColor = "green";
+		}
+}
+</script>
+</body>
+</html>
